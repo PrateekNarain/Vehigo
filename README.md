@@ -1,5 +1,5 @@
 
-<img src="https://github.com/aryansoni13/VehiGo/blob/ffae3814d864fe195d3d8b27402dcacf4cf1210e/VehiGo%20Home/vehigo.png" />
+<img src="https://github.com/PrateekNarain/Vehigo/blob/main/VehiGo%20Home/images/project-logo.png?raw=true" />
 
  # VehiGo - Car Rental Website
  
