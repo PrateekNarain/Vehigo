@@ -41,7 +41,7 @@ To get started with VehiGo, follow these steps:
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/PrateekNarain/Vehigo
+    git clone https://github.com/PrateekNarain/Vehigo.git
     ```
 
 2. **Navigate to the project directory:**
@@ -77,7 +77,7 @@ To contribute:
 2. **Clone your forked repository:**
 
     ```sh
-    git clone https://github.com/PrateekNarain/Vehigo
+    git clone https://github.com/PrateekNarain/Vehigo.git
     ```
 
 
