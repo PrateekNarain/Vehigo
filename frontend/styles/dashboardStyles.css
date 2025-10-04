@@ -1,0 +1,466 @@
+/* Dashboard Styles */
+
+/* User Profile Section in Header */
+.user-profile-section {
+  position: relative;
+  margin-left: 20px;
+}
+
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-pic-small {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #0171d3;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.profile-pic-small:hover {
+  border-color: #2b8de3;
+  transform: scale(1.05);
+}
+
+.profile-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  min-width: 150px;
+  display: none;
+  z-index: 1000;
+}
+
+.profile-menu.show {
+  display: block;
+}
+
+.profile-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.profile-menu a:hover {
+  background-color: #f8f9fa;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: linear-gradient(135deg, #0171d3, #2b8de3);
+  color: white;
+  padding: 60px 0 40px;
+  margin-top: 80px;
+}
+
+.welcome-content {
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Owner Profile Section */
+.owner-profile-section {
+  padding: 100px 0 40px;
+  background-color: #f8f9fa;
+}
+
+.owner-profile-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0171d3;
+}
+
+.profile-details h1 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.profile-details p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.earnings-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.earning-card {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #0171d3, #2b8de3);
+  color: white;
+  border-radius: 10px;
+}
+
+.earning-card h3 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.earning-amount {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Rental Tabs */
+.rental-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  border: 2px solid #0171d3;
+  background: transparent;
+  color: #0171d3;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: #0171d3;
+  color: white;
+}
+
+/* Rental List */
+.rental-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.rental-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.rental-card:hover {
+  transform: translateY(-5px);
+}
+
+.rental-car-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.rental-car-image {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.rental-car-details h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.rental-car-details p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.rental-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.rental-status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.rental-status.active {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.rental-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-feedback {
+  background: #28a745;
+  color: white;
+}
+
+.btn-feedback:hover {
+  background: #218838;
+}
+
+.btn-rent {
+  background: #0171d3;
+  color: white;
+}
+
+.btn-rent:hover {
+  background: #2b8de3;
+}
+
+.btn-track {
+  background: #ffc107;
+  color: #333;
+}
+
+.btn-track:hover {
+  background: #e0a800;
+}
+
+.btn-details {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-details:hover {
+  background: #5a6268;
+}
+
+/* Add Car Button */
+.add-car-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.add-car-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+/* Featured Car List Modifications for Dashboard */
+.featured-car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.featured-car-card {
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.featured-car-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Car Status Badge */
+.car-status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.car-status-badge.available {
+  background: #d4edda;
+  color: #155724;
+}
+
+.car-status-badge.rented {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.car-status-badge.maintenance {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Car Actions */
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.car-earnings {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.car-earnings small {
+  color: #28a745;
+  font-weight: 500;
+}
+
+/* No cars/rentals message */
+.no-cars, .no-rentals {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-cars-message, .no-rentals-message {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 40px;
+  color: #666;
+}
+
+.no-cars-message ion-icon, .no-rentals-message ion-icon {
+  font-size: 4rem;
+  color: #0171d3;
+  margin-bottom: 20px;
+}
+
+.no-cars-message h3, .no-rentals-message h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.no-cars-message p, .no-rentals-message p {
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .owner-profile-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .earnings-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-title {
+    font-size: 2rem;
+  }
+
+  .rental-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-btn {
+    width: 200px;
+  }
+
+  .rental-actions {
+    flex-direction: column;
+  }
+
+  .user-profile-section {
+    margin-left: 10px;
+  }
+
+  .profile-menu {
+    right: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-section {
+    padding: 40px 0 20px;
+  }
+
+  .owner-profile-section {
+    padding: 80px 0 20px;
+  }
+
+  .owner-profile-card {
+    padding: 20px;
+  }
+
+  .profile-pic-large {
+    width: 80px;
+    height: 80px;
+  }
+
+  .earning-card {
+    padding: 15px;
+  }
+
+  .earning-amount {
+    font-size: 1.2rem;
+  }
+}
